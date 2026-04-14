@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Albert | Professional Forex EA Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* --- ซ่อนเครื่องมือและแถบกวนใจของ Google Translate ทั้งหมด --- */
+        body { top: 0 !important; }
+        .skiptranslate iframe, .goog-te-banner-frame { display: none !important; }
+        #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+        .goog-text-highlight { background: none !important; box-shadow: none !important; }
+        #google_translate_element { display: none !important; }
+        .VIpgJd-ZVi9od-ORHb-OEVmcd { display: none !important; }
+
+        /* ปรับแต่ง Dropdown สีเข้ม */
+        select option {
+            background-color: #1e293b;
+            color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-2xl tracking-wider gradient-text">
+                    JAMES ALBERT
+                </div>
+                <div class="flex items-center space-x-4">
+                    
+                    <div class="relative flex items-center bg-slate-800 rounded-lg px-3 py-1.5 border border-slate-600 hover:border-blue-400 transition-colors">
+                        <i class="fa-solid fa-globe text-blue-400 mr-2"></i>
+                        <select id="custom-lang-selector" onchange="changeLanguage(this.value)" class="bg-transparent text-slate-200 text-sm font-medium focus:outline-none cursor-pointer appearance-none pr-5 relative z-10">
+                            <option value="en" selected>🇬🇧 English</option>
+                            <option value="th">🇹🇭 ไทย</option>
+                            <option value="zh-CN">🇨🇳 中文</option>
+                            <option value="ja">🇯🇵 日本語</option>
+                            <option value="ru">🇷🇺 Русский</option>
+                            <option value="fr">🇫🇷 Français</option>
+                            <option value="de">🇩🇪 Deutsch</option>
+                            <option value="es">🇪🇸 Español</option>
+                            <option value="it">🇮🇹 Italiano</option>
+                            <option value="iw">🇮🇱 עברית</option>
+                            <option value="vi">🇻🇳 Tiếng Việt</option>
+                            <option value="my">🇲🇲 မြန်မာ</option>
+                            <option value="lo">🇱🇦 ລາວ</option>
+                            <option value="km">🇰🇭 ភាសាខ្មែរ</option>
+                            <option value="id">🇮🇩 Bahasa Indonesia</option>
+                            <option value="ms">🇲🇾 Bahasa Melayu</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down text-slate-400 text-xs absolute right-3 pointer-events-none"></i>
+                    </div>
+
+                    <div id="google_translate_element"></div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl sm:text-6xl font-extrabold mb-6">
+            Expert Algorithmic Trading <br> <span class="gradient-text">Solutions Developer</span>
+        </h1>
+        <p class="mt-4 text-xl text-slate-300 max-w-3xl mx-auto">
+            Transforming trading strategies into automated reality. With an engineering background and verified proprietary trading success, I build robust systems for MetaTrader platforms.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="#services" class="px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all">Explore Services</a>
+            <a href="#contact" class="px-8 py-3 rounded-full glass-card hover:bg-slate-700 text-white font-semibold transition-all">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto rounded"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="glass-card p-8 rounded-2xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-400">Trading & Engineering Background</h3>
+                    <p class="text-slate-300 mb-4 leading-relaxed">
+                        I am an Independent Forex Trader and Algorithm Developer active since 2015. Combining a robust logical foundation from a Bachelor's Degree in Industrial Engineering with financial market expertise, I design high-performance automated systems.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        Beyond coding, I am a certified funded trader for international proprietary firms (FTMO & Axi Select), ensuring that the tools I build are grounded in real-world market mechanics and strict risk management.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i class="fa-solid fa-code text-4xl text-blue-400 mb-3"></i>
+                        <h4 class="font-bold">MQL4 / MQL5</h4>
+                        <p class="text-sm text-slate-400">Expert Level</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i class="fa-brands fa-python text-4xl text-yellow-400 mb-3"></i>
+                        <h4 class="font-bold">Python / C++</h4>
+                        <p class="text-sm text-slate-400">Data Analysis</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i class="fa-solid fa-chart-line text-4xl text-green-400 mb-3"></i>
+                        <h4 class="font-bold">Prop Trader</h4>
+                        <p class="text-sm text-slate-400">FTMO & Axi Select</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i class="fa-solid fa-gears text-4xl text-purple-400 mb-3"></i>
+                        <h4 class="font-bold">Strategy Testing</h4>
+                        <p class="text-sm text-slate-400">Back/Forward Test</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">My Freelance Services</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto rounded"></div>
+                <p class="mt-4 text-slate-400">Professional development tailored to your trading needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition-all cursor-pointer group">
+                    <i class="fa-solid fa-robot text-4xl text-blue-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-3">EA Development (MQL4/5)</h3>
+                    <p class="text-slate-400 text-sm">Custom Expert Advisors built from your specific strategy. Includes risk management, trailing stops, and complex order execution logic.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition-all cursor-pointer group">
+                    <i class="fa-solid fa-wave-square text-4xl text-purple-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-3">Custom Indicators</h3>
+                    <p class="text-slate-400 text-sm">Development of bespoke technical indicators, combining multiple standard indicators into unified signaling tools.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition-all cursor-pointer group">
+                    <i class="fa-solid fa-copy text-4xl text-green-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-3">CopyTrade Systems</h3>
+                    <p class="text-slate-400 text-sm">High-speed, low-latency local or network trade copiers between master and multiple slave accounts.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition-all cursor-pointer group">
+                    <i class="fa-solid fa-lock text-4xl text-red-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-3">EA Locking (Online/Offline)</h3>
+                    <p class="text-slate-400 text-sm">Protect your intellectual property. I build licensing systems based on account numbers, expiration dates, or remote web server verification.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition-all cursor-pointer group">
+                    <i class="fa-solid fa-solar-panel text-4xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-3">Remote EA Dashboard</h3>
+                    <p class="text-slate-400 text-sm">Control your EAs remotely via Telegram or a web dashboard. Monitor drawdown, equity, and manage active trades from anywhere.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition-all cursor-pointer group">
+                    <i class="fa-solid fa-code-compare text-4xl text-orange-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-3">PineScript to MQL</h3>
+                    <p class="text-slate-400 text-sm">Convert your profitable TradingView PineScript strategies and indicators directly into native MT4/MT5 algorithms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Ready to automate your strategy?</h2>
+            <div class="glass-card p-10 rounded-3xl flex flex-col items-center">
+                <p class="text-slate-300 mb-8 text-lg">Let's discuss your project requirements. Available for immediate freelance contracts.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center w-full">
+                    <a href="mailto:Tsupamanop@gmail.com" class="flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 px-6 py-4 rounded-xl transition-all border border-slate-600 w-full sm:w-auto">
+                        <i class="fa-solid fa-envelope text-blue-400 text-xl"></i>
+                        <span class="font-medium">Tsupamanop@gmail.com</span>
+                    </a>
+                    <a href="https://line.me/ti/p/~0899129260" target="_blank" class="flex items-center justify-center gap-3 bg-green-900/50 hover:bg-green-800/50 px-6 py-4 rounded-xl transition-all border border-green-700 w-full sm:w-auto">
+                        <i class="fa-brands fa-line text-green-400 text-xl"></i>
+                        <span class="font-medium">Line ID: 0899129260</span>
+                    </a>
+                    <div class="flex items-center justify-center gap-3 bg-slate-800 px-6 py-4 rounded-xl border border-slate-600 w-full sm:w-auto">
+                        <i class="fa-solid fa-phone text-slate-400 text-xl"></i>
+                        <span class="font-medium">+66 89-912-9260</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 py-8 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-sm">© 2026 James Albert (Thana S.). All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'th,en,zh-CN,ja,ru,fr,de,es,it,iw,vi,my,lo,km,id,ms',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        // ฟังก์ชันสั่งงานให้ Dropdown ของเรา ไปเปลี่ยนค่าใน Dropdown ของ Google ที่ซ่อนอยู่
+        function changeLanguage(langCode) {
+            var selectField = document.querySelector(".goog-te-combo");
+            if (selectField) {
+                selectField.value = langCode;
+                selectField.dispatchEvent(new Event('change'));
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
